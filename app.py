@@ -72,7 +72,7 @@ st.title("🤖 AI Business Intelligence Agent")
 st.subheader("Upload your data and get instant insights!")
 
 # Groq API setup
-GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "your-api-key-here")")
+GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "your-api-key-here")
 client = Groq(api_key=GROQ_API_KEY)
 
 uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
